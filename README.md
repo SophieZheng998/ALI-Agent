@@ -1,7 +1,7 @@
 <div align=center>
 <!-- <h1>ALI-Agent: Assessing LLMs'Alignment with Human Values via Agent-based Evaluation</h1> -->
 
-<h1>ALI-Agent: Assessing LLMs'Alignment with Human Values via Agent-based Evaluation</h1>
+<h1>ALI-Agent: Assessing LLMs'Alignment with Human Values via Agent-based Evaluation [NeurIPS 2024]</h1>
 
 <img src="https://img.shields.io/badge/License-MIT-blue" alt="license">
 
