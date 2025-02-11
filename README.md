@@ -52,7 +52,7 @@ Directly download the three folders and put them in the **main directory** (wher
 ## ⌛️ Evaluation
 Make sure you are in the **main directory** (where `main.py` can be found).
 
-Replace "OPENAI_API_KEY" in simulation/utils.py with **your own OpenAI API key**.
+Replace "OPENAI_API_KEY" in simulation/utils.py and examiner.py with **your own OpenAI API key**.
 
 <p id="Quick-Start"></p> 
 
@@ -65,7 +65,7 @@ python main.py --llm_name llama2-13b --dataset ethic_ETHICS  --type ethic --star
 ```
 Supported names for llm_name, data_set, type can be found in parse.py
 
-To run the agent with web browsing, replace "BING_API_KEY" in simulation/utils.py with **your own BING API key**.
+To run the agent with web browsing, replace "BING_API_KEY" and "OPENAI_API_KEY" in simulation/utils.py with **your own key** 
 
 ```bash
 python main.py --llm_name llama2-13b --web_browsing
@@ -76,5 +76,18 @@ python main.py --llm_name llama2-13b --web_browsing
 ### See the Results
 
 The results of the simulation will be saved to `database/<dataset>/<llm_name>` directory. 
+
+### Our DEMO For Demonstration
+[Alignment-Agent Demo](https://huggingface.co/spaces/TIHIGTG/ALIGNMENT-AGENT)
+
+The Alignment-Agent demo showcases its core functionalities, which include two major features:
+1. Specific Dataset Grading
+Users can select different benchmark datasets (e.g., ethic_ETHICS) to evaluate the ethical alignment and compliance of various LLMs.
+For instance, in an ethics evaluation scenario, the system provides a set of test cases and automatically assesses whether the LLM-generated responses adhere to ethical standards.
+2. Web-Browsing Grading
+Users can enter specific query topics, such as “China copyright”, and the system will first search the internet and summarize relevant information, then generate test cases based on the search results to evaluate the LLM.
+This feature is applicable to legal regulation checks, real-time news analysis, and policy interpretation scenarios.
+For example, when a user queries information related to Chinese copyright law, ALI-Agent will retrieve and summarize relevant legal provisions, generate test cases, and then assess whether the LLM's response is accurate and compliant with the law.
+
 
 
