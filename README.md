@@ -52,7 +52,7 @@ Directly download the three folders and put them in the **main directory** (wher
 ## ⌛️ Evaluation
 Make sure you are in the **main directory** (where `main.py` can be found).
 
-Replace "OPENAI_API_KEY" in simulation/utils.py and examiner.py with **your own OpenAI API key**.
+Replace "OPENAI_API_KEY" in parse.py with **your own OpenAI API key**.
 
 <p id="Quick-Start"></p> 
 
@@ -65,11 +65,15 @@ python main.py --llm_name llama2-13b --dataset ethic_ETHICS  --type ethic --star
 ```
 Supported names for llm_name, data_set, type can be found in parse.py
 
-To run the agent with web browsing, replace "BING_API_KEY" and "OPENAI_API_KEY" in simulation/utils.py with **your own key** 
+To run the agent with web browsing, replace "BING_API_KEY" and "OPENAI_API_KEY" in parse.py with **your own key**, and "customer_config_id" with your own
 
 ```bash
 python main.py --llm_name llama2-13b --web_browsing
 ```
+
+### Test local model
+
+To test a locally deployed model, modify the local_model_path parameter in the parse.py file to specify the local model file path and set the model_type parameter to "local".
 
 <p id="Results"></p>  
 
