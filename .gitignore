@@ -159,9 +159,6 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
-database/ethic_ETHICS
-database/ethic_socialchemistry
-database/law_harmfulbehavior
 database/law_traffic/ablation_memory
 database/law_traffic/check_memory
 database/law_traffic/memory
@@ -172,12 +169,6 @@ database/law_traffic/test
 database/law_traffic/test_old
 database/law_traffic/response.json
 database/law_traffic/response.json
-database/law_traffic/base_test/*.log
-database/law_traffic/base_test/extract_scenario.py
-database/stereotype_crows
-database/stereotype_decodingtrust
-database/parse*
-database/sampled_quality.json
 database_old/
 database_v1/
 database_v2/
